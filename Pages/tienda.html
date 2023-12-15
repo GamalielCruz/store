@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>
+      Garoga
+    </title>
+    <meta name="description" content="Igzzio" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <link rel="stylesheet" media="all" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/>
+    <!--Replace with your tailwind.css once created-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
+    <!-- Define your gradient here - use online tools to find a gradient matching your branding-->
+    <style>
+      .gradient {
+        background: linear-gradient(90deg, #fefff9   0%, #fefff9 100%);
+      }
+    </style>
+  </head>
+  <body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif;">
+    <!--Nav-->
+    <nav id="header" class="fixed w-full z-30 top-0 text-black">
+      <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-1 py-1">
+        <div class="pl-6 flex items-center">
+          <a href="#"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjnQL7gNaZ66YKYY04O4cbfMyzHEq16F_vKD5nkOcSgBRx1baNFMo0v1QnpcOc4zkZ4DmSKW9xSJfXRyekHKQQ-qHb1LB6BCACzP9X5BUkKWDAnZW2rc-9lhcjVo-xR2SAxxOUjm2p-Rf8Kfq8dHDd_1h-eM7_m4CLdqmTWTDNU0FlhqjOOUygyNj2BvhQ/s1600/recortel%20%282%29.png" alt="logo" class="h-12 w-30 mr-1"/></a>
+          <a class="toggleColour text-black no-underline hover:no-underline font-bold text-2xl lg:text-3xl" href="#">
+            <!--Icon from: http://www.potlabicons.com/ -->
+            Garoga
+          </a>
+        </div>
+        <div class="block lg:hidden pr-4">
+          <button id="nav-toggle" class="flex items-center p-1 text-yellow-4  00 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+            <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <title>Garoga</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
+          </button>
+        </div>
+        <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-white p-4 lg:p-0 z-20" id="nav-content">
+          <ul class="list-reset lg:flex justify-end flex-1 items-center">
+            <li class="mr-3">
+              <a class="inline-block py-2 px-4 text-black font-bold no-underline" href="#">Inicio</a>
+            </li>
+            <li class="mr-3">
+              <a class="inline-block text-black no-underline  hover:text-underline py-2 px-4" href="#Servicios">Servicios</a>
+            </li>
+            <li class="mr-2">
+              <a class="inline-block text-black no-underline hover:text-gray-500 hover:text-underline py-2 px-4" href="tienda.html">Tienda</a>
+            </li>
+            <li class="mr-2">
+              <a class="inline-block text-black no-underline hover:text-gray-500 hover:text-underline py-2 px-4" href="#Servicios">Cotizar Diseño</a>
+            </li>
+          </ul>
+          <a href="contacto.html" class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-1 px-7 shadow  focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+            Contacto
+          </a>
+          
+        </div>
+      </div>
+      <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
+    </nav>
+    <!--Hero-->
+ 
+
+<div class="pt-24">
+
+<!-- component -->
+<link rel="stylesheet" href="https://unpkg.com/@themesberg/flowbite@1.2.0/dist/flowbite.min.css" />
+
+<div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-1 py-1">
+    
+    <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-1 py-1">
+        <ul class="w-full container mx-auto flex flex-wrap items-center justify-center mt-1 py-1" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
+            <li class="mr-2" role="presentation">
+                <button class="inline-block text-black font-bold  hover:text-gray-600 hover:border-gray-300  rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 py-4 px-4 text-sm font-medium text-center border-yellow-600 border-2 dark:text-gray-400 dark:hover:text-gray-300" id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Presupuesto</button>
+            </li>
+            <li class="mr-2" role="presentation">
+                <button class="inline-block text-black font-bold hover:text-gray-600 hover:border-gray-300  rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 py-4 px-4 text-sm font-medium text-center border-yellow-600 border-2 dark:text-gray-400 dark:hover:text-gray-300 active" id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="true">Tienda</button>
+            </li>
+            
+        </ul>
+    </div>
+    <div id="myTabContent">
+        <div class="bg-gray-50 p-4 rounded-lg dark:bg-gray-800 hidden" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+        
+
+
+
+            
+        </div>
+        <div class="bg-gray-50 p-4 rounded-lg dark:bg-gray-800" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+            <a href="Pages/tienda.html" class="pl-4">
+                <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl m-1">
+                <div class="md:flex">
+                  <div class="md:flex-shrink-0">
+                   <img class="h-32 w-full object-cover md:h-48 md:w-48" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1Wafd7uOy3JkbuHYYM12-vSkTRgqSYjXm5AB-l48NyfkbaE3fmhEsfDSbrPkADjmYRQ6cUtfnKNQCskGCLBbWiDcJXFAtBuwOGM9Jez6_iBOZUuqpbhWZo1wGe_gUCX5mjk6eB6ow79R7qHerHcuuBIgDJJdQyQrfWL6GAwULtN-fQTOqiu2PoaQzBcc/s1600/recortel.jpg" alt="Imagen del producto">
+                   </div>
+                   <div class="p-4">
+                   <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">#6739</div>
+                   <div class="block mt-1 text-sm leading-tight font-medium text-black hover:underline">Sello para Maestros personalizado</div>
+                  <p class="mt-2 text-gray-500 line-through">$523.00</p>
+                  <p class="mt-2 text-black font-bold">$350.00</p>
+                  </div>
+                </div>
+               </div>
+              </a>
+          
+              <a href="/Pages/tienda.html" class="pl-4">
+                <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl m-1">
+                <div class="md:flex">
+                  <div class="md:flex-shrink-0">
+                   <img class="h-32 w-full object-cover md:h-48 md:w-48" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGTBnRCv6AWjXLeKcqJTKOfGemoLfccm3OAySYPT-PzWYdANhLEdnU5PqMLKhEisZJO6p2dTmbwL4ylO_FqGTVKMfKdC0Vo0KTF6wdAQ8mdbo1CBnEVsJY5OFiT6borQrO-tNxbrsMI5ptU9UcjDf10sDyQrrcAcFU9eF_xqSAqJqF-7c42Fsx-piL774/s1600/recortel%20%281%29.jpg" alt="Imagen del producto">
+                   </div>
+                   <div class="p-4">
+                   <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">#139</div>
+                   <div class="  mt-1 text-sm leading-tight font-medium text-black hover:underline">Recuerdos para bautizos</div>
+                  
+                  <p class="mt-2 text-black font-bold">30 x $350.00</p>
+                  </div>
+                </div>
+               </div>
+              </a>
+              
+              <a href="Pages/tienda.html" class="pl-4">
+                <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl m-1">
+                <div class="md:flex">
+                  <div class="md:flex-shrink-0">
+                   <img class="h-32 w-full object-cover md:h-48 md:w-48" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhX4E7S9jm9NikMvp_UhRgZffABi66NxizCwMPMeneyiKcu7N9RhRNrdqMR2Rj_r4LUh5NCXex8RB-9-Y3vQ499ffm1GkwAfIMS_GUTyJ4tTa-BTObAlWh5oVuJlxyf9D0iehUw0cPTV8V45n927XbBYCWky2oEBCskuG8iTErZjs6G8CkV3qvA14HUOGE/s1600/recortel%20%282%29.jpg" alt="Imagen del producto">
+                   </div>
+                   <div class="p-4">
+                   <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">#6893</div>
+                   <div class="  mt-1 text-sm leading-tight font-medium text-black hover:underline">Letras PVC para marca</div>
+                  
+                  <p class="mt-2 text-indigo-500 font-bold ">Requiere cotización</p>
+                  </div>
+                </div>
+               </div>
+              </a>
+
+        </div>
+       
+    </div>
+
+</div>
+
+<script src="https://unpkg.com/@themesberg/flowbite@1.2.0/dist/flowbite.bundle.js"></script>
+
+</div>
+
+
+
+
+    
+    <!--Footer-->
+    <footer class="bg-yellow-300">
+      <div class="container mx-auto px-8">
+        <div class="w-full flex flex-col md:flex-row py-6">
+          
+            <div class="flex-1 mb-6 pl-4 flex items-center ">
+              <a><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrNoSwHao9rkFK-qxxS4I-TddpW4xgxLDH-Yab__LlO3fO_OBaPekg04h5eQ8lNuM6XvG_5XT05znDgQg9Lw-5Li7HNNtb0YFT2UG7gZnZP_Q1F9miLqNK7aSumUUbgQQ0FbT4rut0oNnet2trPJF6FPe6ZWk0iKgLMYAWqRvKyDVHcjMNLVGa-yALtrU/s1600/2.png" alt="logo" class="h-40 w-40 mr-1 "/></a>        
+                    
+              
+            </div>
+          
+          <div class="flex-1">
+            <p class="uppercase text-black md:mb-6">Soporte</p>
+            <ul class="list-reset mb-6">
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="preguntas.html" class="no-underline hover:underline text-black hover:text-yellow-800">Preguntas frecuentes</a>
+              </li>
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="ayuda.html" class="no-underline hover:underline text-black hover:text-yellow-800">Ayuda</a>
+              </li>
+            </ul>
+          </div>
+          <div class="flex-1">
+            <p class="uppercase text-black md:mb-6">Legal</p>
+            <ul class="list-reset mb-6">
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="terminos.html" class="no-underline hover:underline text-black hover:text-yellow-800">Terminos y condiciones</a>
+              </li>
+            </ul>
+          </div>
+          <div class="flex-1">
+            <p class="uppercase text-black md:mb-6">Redes Sociales</p>
+            <ul class="list-reset mb-6">
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="#" class="no-underline hover:underline text-black hover:text-yellow-800">Youtube</a>
+              </li>
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="#" class="no-underline hover:underline text-black hover:text-yellow-800">Instagram</a>
+              </li>
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="#" class="no-underline hover:underline text-black hover:text-yellow-800">TikTok</a>
+              </li>
+            </ul>
+          </div>
+          <div class="flex-1">
+            <p class="uppercase text-black md:mb-6">Contacto</p>
+            <ul class="list-reset mb-6">
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="#" class="no-underline hover:underline text-black hover:text-yellow-800">WhatsApp</a>
+              </li>
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="#" class="no-underline hover:underline text-black hover:text-yellow-800">Acerca de nosotros</a>
+              </li>
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="#" class="no-underline hover:underline text-black hover:text-yellow-800">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery if you need it
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  -->
+    <script>
+      var scrollpos = window.scrollY;
+      var header = document.getElementById("header");
+      var navcontent = document.getElementById("nav-content");
+      var navaction = document.getElementById("navAction");
+      var brandname = document.getElementById("brandname");
+      var toToggle = document.querySelectorAll(".toggleColour");
+
+      document.addEventListener("scroll", function () {
+        /*Apply classes for slide in bar*/
+        scrollpos = window.scrollY;
+
+        if (scrollpos > 10) {
+          header.classList.add("bg-yellow-300");
+          navaction.classList.remove("bg-white");
+          navaction.classList.add("gradient");
+          navaction.classList.remove("text-white");
+          navaction.classList.add("text-white");
+          //Use to switch toggleColour colours
+          for (var i = 0; i < toToggle.length; i++) {
+            toToggle[i].classList.add("text-white");
+            toToggle[i].classList.remove("text-white");
+          }
+          header.classList.add("shadow");
+          navcontent.classList.remove("bg-white");
+          navcontent.classList.add("bg-white");
+        } else {
+          header.classList.remove("bg-yellow-300");
+          navaction.classList.remove("gradient");
+          navaction.classList.add("bg-black");
+          navaction.classList.remove("text-black");
+          navaction.classList.add("text-black");
+          //Use to switch toggleColour colours
+          for (var i = 0; i < toToggle.length; i++) {
+            toToggle[i].classList.add("text-black");
+            toToggle[i].classList.remove("text-gray-800");
+          }
+
+          header.classList.remove("shadow");
+          navcontent.classList.remove("bg-black");
+          navcontent.classList.add("bg-black-100");
+        }
+      });
+    </script>
+    <script>
+      /*Toggle dropdown list*/
+      /*https://gist.github.com/slavapas/593e8e50cf4cc16ac972afcbad4f70c8*/
+
+      var navMenuDiv = document.getElementById("nav-content");
+      var navMenu = document.getElementById("nav-toggle");
+
+      document.onclick = check;
+      function check(e) {
+        var target = (e && e.target) || (event && event.srcElement);
+
+        //Nav Menu
+        if (!checkParent(target, navMenuDiv)) {
+          // click NOT on the menu
+          if (checkParent(target, navMenu)) {
+            // click on the link
+            if (navMenuDiv.classList.contains("hidden")) {
+              navMenuDiv.classList.remove("hidden");
+            } else {
+              navMenuDiv.classList.add("hidden");
+            }
+          } else {
+            // click both outside link and outside menu, hide menu
+            navMenuDiv.classList.add("hidden");
+          }
+        }
+      }
+      function checkParent(t, elm) {
+        while (t.parentNode) {
+          if (t == elm) {
+            return true;
+          }
+          t = t.parentNode;
+        }
+        return false;
+      }
+    </script>
+  
+   </body>
+</html>
