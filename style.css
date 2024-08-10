@@ -26,14 +26,14 @@ html, body {
     transform-origin: -10vw;
   }
   .firefly::before {
-    background: black;
+    background: rgb(0, 0, 0);
     opacity: 0.4;
     animation: drift ease alternate infinite;
   }
   .firefly::after {
-    background: white;
+    background: rgb(165, 180, 252);
     opacity: 0;
-    box-shadow: 0 0 0vw 0vw yellow;
+    box-shadow: 0 0 0vw 0vw rgb(165 180 252);
     animation: drift ease alternate infinite, flash ease infinite;
   }
   
